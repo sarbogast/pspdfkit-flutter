@@ -32,6 +32,24 @@ class PspdfkitConfigurationExample extends StatelessWidget {
                 child: PspdfkitWidget(
                     documentPath: documentPath,
                     configuration: PdfConfiguration(
+                        annotationToolsGrouping: [
+                          AnnotationToolbarItem.pen,
+                          AnnotationToolbarItem.highlighter,
+                          AnnotationToolbarItem.eraser,
+                        ],
+                        /*annotationToolsGrouping: [
+                          AnnotationToolbarItem.square,
+                          AnnotationToolbarItem.line,
+                          AnnotationToolbarItem.eraser,
+                          AnnotationToolsGroup(
+                            type: AnnotationToolbarItem.markup,
+                            items: [
+                              AnnotationToolbarItem.strikeout,
+                              AnnotationToolbarItem.highlight,
+                              AnnotationToolbarItem.underline,
+                            ],
+                          ),
+                        ],*/
                         scrollDirection: PspdfkitScrollDirection.vertical,
                         pageTransition: PspdfkitPageTransition.scrollContinuous,
                         spreadFitting: PspdfkitSpreadFitting.fit,
