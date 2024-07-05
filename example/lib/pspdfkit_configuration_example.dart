@@ -50,8 +50,8 @@ class PspdfkitConfigurationExample extends StatelessWidget {
                             ],
                           ),
                         ],*/
-                        scrollDirection: PspdfkitScrollDirection.vertical,
-                        pageTransition: PspdfkitPageTransition.scrollContinuous,
+                        scrollDirection: PspdfkitScrollDirection.horizontal,
+                        pageTransition: PspdfkitPageTransition.curl,
                         spreadFitting: PspdfkitSpreadFitting.fit,
                         userInterfaceViewMode:
                             PspdfkitUserInterfaceViewMode.automatic,
@@ -96,7 +96,7 @@ class PspdfkitConfigurationExample extends StatelessWidget {
                           'iOSBrightness'
                         ],
                         showActionNavigationButtons: false,
-                        pageLayoutMode: PspdfkitPageLayoutMode.double,
+                        pageLayoutMode: PspdfkitPageLayoutMode.automatic,
                         firstPageAlwaysSingle: true,
                         webConfiguration: PdfWebConfiguration(
                             toolbarPlacement: PspdfKitToolbarPlacement.bottom,
